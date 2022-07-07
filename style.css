@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+
+    /* Colors */
+
+   --Neon-Blue: #5451fa;
+
+   --Pale-Lavender: #dcdafe;
+
+   --Armadillo: #4a4a4a;
+
+   --Aluminum: #979797;
+}
+body{
+    background: var(--Neon-Blue);
+}
+main{
+    background-color: var(--Pale-Lavender);
+    width: 30%;
+    margin-inline: auto;
+    padding-block: 1%;
+    padding-inline: 2%;
+    margin-block: 2%;
+    border-radius: 20px;
+}
+main nav ul{
+    text-align: right;
+}
+main nav ul li{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+main .profile{
+    text-align: center;
+}
+main .profile .picture{
+    position: relative;
+}
+[alt='Cover']{
+    width: 100%;
+    margin-bottom: 10%;
+    border-radius: 16px;
+}
+[alt='Profile-Photo']{
+    width: 25%;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 22%;
+}
+.profile h1{
+    display: inline-block;
+    color: var(--Armadillo);
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-block: 10px;
+}
+.profile svg{
+    vertical-align: sub;
+}
+.profile p{
+    font-size: 16px;
+    color: var(--Aluminum);
+    margin-bottom: 20px;
+}
+.profile ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-block: 10px;
+}
+.profile ul li p{
+    color: var(--Aluminum);
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+.profile ul li h3{
+    color: var(--Armadillo);
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+#Followers{
+    color: var(--Neon-Blue);
+}
+.profile button{
+    color: var(--Pale-Lavender);
+    background-color: var(--Neon-Blue);
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 9px;
+    margin-block: 10px;
+    cursor: pointer;
+}
+.profile button:active{
+    color: var(--Neon-Blue);
+    background-color: rgb(84, 81, 250,0.5);
+}
+.profile ul ~ ul {
+    display: inline-block;
+    text-align: left;
+    margin-block: 10px;
+}
+.profile ul ~ ul li{
+    margin-block: 10px;
+}
+.profile ul li p{
+    display: inline;
+}
+strong{
+    color: var(--Armadillo);
+}
+.profile ul li embed{
+    vertical-align: sub;
+}
+@media screen and (max-width:900px) {
+    main{
+        width: 60%;
+    }
+}
+@media screen and (max-width:700px) {
+    main{
+        width: 80%;
+    }
+}
